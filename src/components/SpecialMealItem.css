@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mealCard {
+  width: 250px;
+  border-radius: 1rem;
+  background-color: #ae8704;
+  padding: 5px;
+  margin: 5px;
+}
+#specialImg {
+  width: 150px;
+  border-radius: 50%;
+}
+#specialText {
+  font-size: 1.25rem;
+}

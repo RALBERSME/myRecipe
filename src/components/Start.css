@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quattrocento", serif;
+}
+
+.underlying {
+  margin: 5px auto;
+  width: 800px;
+  height: 690px;
+  display: flex;
+  perspective: 500px;
+  background-image: url("/assets/cooking.png");
+  background-position: center;
+  background-size: cover;
+}
+.column {
+  position: relative;
+  flex: 1 1 auto;
+  overflow: hidden;
+  transition: transform 1200ms ease-in-out;
+  backface-visibility: hidden;
+}
+.underlying:hover .column {
+  transform: rotateY(180deg);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 100%;
+  background-image: url("/assets/noIdea.png");
+  background-position: center;
+  background-size: cover;
+  border-top: 12px solid red;
+  border-bottom: 12px solid rgb(246, 166, 37);
+}
+.column:nth-child(1) .overlay {
+  transform: translateX(0%);
+}
+.column:nth-child(2) .overlay {
+  transform: translateX(-10%);
+}
+.column:nth-child(3) .overlay {
+  transform: translateX(-20%);
+}
+.column:nth-child(4) .overlay {
+  transform: translateX(-30%);
+}
+.column:nth-child(5) .overlay {
+  transform: translateX(-40%);
+}
+.column:nth-child(6) .overlay {
+  transform: translateX(-50%);
+}
+.column:nth-child(7) .overlay {
+  transform: translateX(-60%);
+}
+.column:nth-child(8) .overlay {
+  transform: translateX(-70%);
+}
+.column:nth-child(9) .overlay {
+  transform: translateX(-80%);
+}

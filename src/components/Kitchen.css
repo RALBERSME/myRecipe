@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  margin: 0.2% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.52rem;
+  background-color: antiquewhite;
+  padding: 5px;
+  width: 85%;
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+li:hover {
+  color: #ae8704;
+}
+a {
+  text-decoration: none;
+  font-family: "Alice", serif;
+  color: black;
+}
+a:hover {
+  color: #ae8704;
+}
+.container {
+  width: 90%;
+  background-color: antiquewhite;
+}
+
+/* liAnimation */
+
+.liAnimation {
+  transform: scale(1);
+}
+.liAnimation:hover {
+  animation: animateScale 1s 0s ease-in-out forwards;
+}
+@keyframes animateScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/*dropdown */
+.dropbtn {
+  background-color: antiquewhite;
+  font-size: 1.52rem;
+  font-family: "Alice", serif;
+  color: black;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-family: "Alice", serif;
+  font-size: 1.25rem;
+  display: none;
+  position: absolute;
+  background-color: antiquewhite;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content .dropDown:hover {
+  color: #ae8704;
+  animation: animateScale 1s 0s ease-in-out forwards;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ae8704;
+  color: antiquewhite;
+}
+
+#separator1,
+#separator2 {
+  text-decoration: overline underline;
+  color: #ae8704;
+}
+
+/*thanks*/
+#bye {
+  background-color: #ae8704;
+  color: antiquewhite;
+}

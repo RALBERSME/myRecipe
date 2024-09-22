@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.specialContainer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.cta {
+  text-align: center;
+  font-size: 2rem;
+}
+.inputField {
+  text-align: center;
+}
+.input {
+  padding: 5px;
+  font-size: 1.5rem;
+}
+.outputContainer {
+  display: flex;
+  margin: 5% auto;
+}
+.output {
+  display: flex;
+  flex-wrap: wrap;
+}

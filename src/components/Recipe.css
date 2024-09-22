@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info img {
+  width: 400px;
+  height: 300px;
+}
+.details {
+  margin-top: 25px;
+  font-size: 1.5rem;
+}
+.detailsContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.ingredients {
+  font-size: 1.5rem;
+  text-align: left;
+}
+.ingredientItem {
+  margin-bottom: 5px;
+}
+.instructions {
+  margin-top: 25px;
+  font-size: 1.75rem;
+  text-align: left;
+  margin-bottom: 2%;
+}
+#close {
+  font-size: 1.5rem;
+}
